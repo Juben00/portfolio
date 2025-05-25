@@ -57,7 +57,7 @@ export default function LanguagesCarousel() {
             `}</style>
             <div className="flex animate-scroll border p-4">
                 {duplicatedLanguages.map((language, index) => (
-                    <div key={index} className=" flex-shrink-0 mx-6 flex items-center justify-center">
+                    <div key={index} className="flex-shrink-0 mx-6 flex items-center justify-center">
                         <Image
                             src={`/languages/${language.icon}`}
                             alt={language.name}

@@ -84,6 +84,8 @@ export default function Services() {
                                                 <Image
                                                     src={`/languages/${item.icon}`}
                                                     alt={item.name}
+                                                    width={48}
+                                                    height={48}
                                                     className="w-12 h-12 transform group-hover/item:scale-110 transition-transform duration-200"
                                                 />
                                                 <span className="block text-xs text-center mt-1 text-gray-600 dark:text-gray-400 opacity-0 group-hover/item:opacity-100 transition-opacity duration-200">
@@ -116,6 +118,8 @@ export default function Services() {
                                                 <Image
                                                     src={`/languages/${item.icon}`}
                                                     alt={item.name}
+                                                    width={48}
+                                                    height={48}
                                                     className="w-12 h-12 transform group-hover/item:scale-110 transition-transform duration-200"
                                                 />
                                                 <span className="block text-xs text-center mt-1 text-gray-600 dark:text-gray-400 opacity-0 group-hover/item:opacity-100 transition-opacity duration-200">
@@ -150,6 +154,8 @@ export default function Services() {
                                                 <Image
                                                     src={`/languages/${item.icon}`}
                                                     alt={item.name}
+                                                    width={48}
+                                                    height={48}
                                                     className="w-12 h-12 transform group-hover/item:scale-110 transition-transform duration-200"
                                                 />
                                                 <span className="block text-xs text-center mt-1 text-gray-600 dark:text-gray-400 opacity-0 group-hover/item:opacity-100 transition-opacity duration-200">
@@ -183,6 +189,8 @@ export default function Services() {
                                                 <Image
                                                     src={`/languages/${item.icon}`}
                                                     alt={item.name}
+                                                    width={48}
+                                                    height={48}
                                                     className="w-12 h-12 transform group-hover/item:scale-110 transition-transform duration-200"
                                                 />
                                                 <span className="block text-xs text-center mt-1 text-gray-600 dark:text-gray-400 opacity-0 group-hover/item:opacity-100 transition-opacity duration-200">
