@@ -54,7 +54,7 @@ export default function Projects() {
     ]
 
     return (
-        <div className=" mx-auto px-4 py-16 bg-gray-50 dark:bg-gray-900/80">
+        <div id="projects" className=" mx-auto px-4 py-16 bg-gray-50 dark:bg-gray-900/80">
             <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}

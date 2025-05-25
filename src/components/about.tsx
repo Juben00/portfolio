@@ -1,7 +1,5 @@
 "use client"
 
-import { useState, useEffect } from "react";
-
 export default function About() {
     return (
         <div id="about" className="relative py-16 bg-gray-50 dark:bg-gray-900/80">

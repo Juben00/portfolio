@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import emailjs from '@emailjs/browser'
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaFacebook, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaInstagram, FaFacebook, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 
 export default function Contact() {
@@ -51,7 +51,7 @@ export default function Contact() {
     ]
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
+        <div id="contact" className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
             <div className="container mx-auto px-4 py-20">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

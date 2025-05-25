@@ -5,6 +5,7 @@ import Image from "next/image";
 import LogoBlack from "@/images/JA black.png";
 import LogoWhite from "@/images/JA white.png";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -38,13 +39,13 @@ export default function Navbar() {
                 <div className="flex flex-col lg:flex-row justify-between items-center">
                     <div className="flex justify-between items-center w-full lg:w-auto">
                         <div className="flex items-center px-2">
-                            <a href="/" className="font-bold text-gray-800 dark:text-white">
+                            <Link href="/" className="font-bold text-gray-800 dark:text-white">
                                 {darkMode ? (
                                     <Image src={LogoWhite} alt="Logo" width={80} height={80} />
                                 ) : (
                                     <Image src={LogoBlack} alt="Logo" width={80} height={80} />
                                 )}
-                            </a>
+                            </Link>
                             <p className="text-xl md:text-3xl font-semibold text-gray-800 dark:text-white ml-2">
                                 Joevin Ansoc
                             </p>
@@ -85,29 +86,64 @@ export default function Navbar() {
                     <div className={`${isOpen ? 'block' : 'hidden'} lg:block w-full lg:w-auto bg-white dark:bg-gray-800 lg:bg-transparent dark:lg:bg-transparent shadow-lg lg:shadow-none mt-2 lg:mt-0`}>
                         <ul className="flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0 lg:space-x-4 p-4 lg:p-0">
                             <li>
-                                <a href="/" className="block text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
+                                <Link
+                                    href="/#home"
+                                    className="block text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' });
+                                    }}
+                                >
                                     Home
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="/" className="block text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
+                                <Link
+                                    href="/#about"
+                                    className="block text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+                                    }}
+                                >
                                     About
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="/" className="block text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
+                                <Link
+                                    href="/#services"
+                                    className="block text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
+                                    }}
+                                >
                                     Services
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="/" className="block text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
+                                <Link
+                                    href="/#projects"
+                                    className="block text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+                                    }}
+                                >
                                     Projects
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="/" className="block text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
+                                <Link
+                                    href="/#contact"
+                                    className="block text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                                    }}
+                                >
                                     Contact
-                                </a>
+                                </Link>
                             </li>
                             <li>
                                 <Button
