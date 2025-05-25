@@ -4,7 +4,6 @@ import { useState } from "react"
 import emailjs from '@emailjs/browser'
 import { FaGithub, FaLinkedin, FaInstagram, FaFacebook, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa'
 import { motion } from 'framer-motion'
-import { log } from "console"
 
 export default function Contact() {
     const [name, setName] = useState<string>("")
