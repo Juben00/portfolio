@@ -43,15 +43,15 @@ export default function Services() {
 
 
     return (
-        <div id="services" className="relative py-24 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
+        <div id="services" className="relative bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
 
             <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg border"
+                className="bg-white dark:bg-gray-800  rounded-xl shadow-lg border"
             >
-                <motion.div className="container mx-auto px-4">
+                <motion.div className="container mx-auto pt-12 px-4">
                     <div className="text-center mb-16">
                         <h1 className="text-5xl font-bold text-gray-800 dark:text-white mb-4 leading-tight">
                             Services

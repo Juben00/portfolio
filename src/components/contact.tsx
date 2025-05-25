@@ -4,11 +4,12 @@ import { useState } from "react"
 import emailjs from '@emailjs/browser'
 import { FaGithub, FaLinkedin, FaInstagram, FaFacebook, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa'
 import { motion } from 'framer-motion'
+import { log } from "console"
 
 export default function Contact() {
-    const [name, setName] = useState("")
-    const [email, setEmail] = useState("")
-    const [message, setMessage] = useState("")
+    const [name, setName] = useState<string>("")
+    const [email, setEmail] = useState<string>("")
+    const [message, setMessage] = useState<string>("")
     const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle')
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -21,7 +22,8 @@ export default function Contact() {
                 'template_btwzoqx',
                 {
                     from_name: name,
-                    from_email: email,
+                    email: email,
+                    reply_to: email,
                     message: message,
                     to_email: 'joevinansoc870@gmail.com',
                 },
