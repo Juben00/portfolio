@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Services() {
     const frontend = [
@@ -80,7 +81,7 @@ export default function Services() {
                                     <div className="flex flex-wrap gap-4 mt-4">
                                         {frontend.map((item) => (
                                             <div key={item.name} className="group/item">
-                                                <img
+                                                <Image
                                                     src={`/languages/${item.icon}`}
                                                     alt={item.name}
                                                     className="w-12 h-12 transform group-hover/item:scale-110 transition-transform duration-200"
@@ -112,7 +113,7 @@ export default function Services() {
                                     <div className="flex flex-wrap gap-4 mt-4">
                                         {backend.map((item) => (
                                             <div key={item.name} className="group/item">
-                                                <img
+                                                <Image
                                                     src={`/languages/${item.icon}`}
                                                     alt={item.name}
                                                     className="w-12 h-12 transform group-hover/item:scale-110 transition-transform duration-200"
@@ -146,7 +147,7 @@ export default function Services() {
                                     <div className="flex flex-wrap gap-4 mt-4">
                                         {database.map((item) => (
                                             <div key={item.name} className="group/item">
-                                                <img
+                                                <Image
                                                     src={`/languages/${item.icon}`}
                                                     alt={item.name}
                                                     className="w-12 h-12 transform group-hover/item:scale-110 transition-transform duration-200"
@@ -179,7 +180,7 @@ export default function Services() {
                                     <div className="flex flex-wrap gap-4 mt-4">
                                         {tools.map((item) => (
                                             <div key={item.name} className="group/item">
-                                                <img
+                                                <Image
                                                     src={`/languages/${item.icon}`}
                                                     alt={item.name}
                                                     className="w-12 h-12 transform group-hover/item:scale-110 transition-transform duration-200"

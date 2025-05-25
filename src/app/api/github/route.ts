@@ -30,15 +30,16 @@ export async function GET() {
         }))
 
         return NextResponse.json(projects)
-    } catch (error: any) {
+    } catch (error: Error | unknown) {
         console.error('GitHub API Error:', error)
+        const err = error as Error
         return NextResponse.json(
             {
                 error: 'Failed to fetch GitHub repositories',
-                details: error.message,
-                status: error.status || 500,
+                details: err.message,
+                status: 500,
             },
-            { status: error.status || 500 }
+            { status: 500 }
         )
     }
 }

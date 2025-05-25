@@ -206,7 +206,7 @@ export default function Contact() {
                                     transition={{ duration: 0.4 }}
                                     className="text-green-500 text-center bg-green-50 dark:bg-green-900/30 p-3 rounded-lg"
                                 >
-                                    Message sent successfully! I'll get back to you soon.
+                                    Message sent successfully! I&apos;ll get back to you soon.
                                 </motion.p>
                             )}
                             {status === 'error' && (

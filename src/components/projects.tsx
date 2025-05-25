@@ -28,8 +28,9 @@ export default function Projects() {
                 const data = await result.json()
                 setProjects(data)
                 console.log(data)
-            } catch (error: any) {
-                console.log(`Error! Status: ${error?.status}. Message: ${error?.response?.data?.message}`)
+            } catch (error: Error | unknown) {
+                const err = error as Error
+                console.log(`Error! Message: ${err.message}`)
             }
         }
 

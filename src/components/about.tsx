@@ -11,7 +11,7 @@ export default function About() {
                     <div className="w-full lg:w-1/2 space-y-6">
                         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 transform hover:scale-105 transition-transform duration-300">
                             <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-lg">
-                                I'm Joevin C. Ansoc, a passionate and dedicated programmer with a strong foundation in web development and software design. As a BS Computer Science student, I specialize in crafting clean, responsive interfaces using different technologies while also working comfortably with backend stacks like Node.js, PHP, and MySQL.
+                                I&apos;m Joevin C. Ansoc, a passionate and dedicated programmer with a strong foundation in web development and software design. As a BS Computer Science student, I specialize in crafting clean, responsive interfaces using different technologies while also working comfortably with backend stacks like Node.js, PHP, and MySQL.
                             </p>
                         </div>
                         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 transform hover:scale-105 transition-transform duration-300">
